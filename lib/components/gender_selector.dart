@@ -1,4 +1,7 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
+import 'package:imc_calculator/core/app_styles.dart';
 
 class GenderSelector extends StatefulWidget {
   const GenderSelector({super.key});
@@ -14,28 +17,29 @@ class _GenderSelectorState extends State<GenderSelector> {
   Widget build(BuildContext context) {
     return Row(
       children: [
+        // Hombre
         Spacer(),
         Column(
           children: [
             Image.network(
-              "https://icones.pro/wp-content/uploads/2022/09/icone-homme-noir.png",
-              height: 200,
-              width: 50,
+              "https://github.com/ArisGuimera/Flutter-Expert/blob/master/imc_calculator/assets/images/male.png?raw=true",
+              scale: 6,
             ),
-            Text("Hombre"),
+            Text("Hombre", style: TextStyles.bodyText),
           ],
         ),
         Spacer(),
         Column(
           children: [
+            // Mujer
             Image.network(
-              "https://icones.pro/wp-content/uploads/2021/03/symbole-feminin-icone-violette.png",
-              height: 200,
-              width: 50,
+              "https://github.com/ArisGuimera/Flutter-Expert/blob/master/imc_calculator/assets/images/female.png?raw=true",
+              scale: 6,
+
               color: Colors
                   .black, // Cambiamos el color porque la imagen original es morada
             ),
-            Text("Mujer"),
+            Text("Mujer", style: TextStyles.bodyText),
           ],
         ),
         Spacer(),
