@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:imc_calculator/core/app_colors.dart';
+import 'package:imc_calculator/screens/imc_home_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -19,7 +20,7 @@ class MainApp extends StatelessWidget {
         ),
         backgroundColor: AppColors
             .background, // Color del fondo, seleccionado de nuestra paleta
-        body: Center(child: Text('Hello World!')),
+        body: ImcHomeScreen(), // Vista Home de la app
       ),
     );
   }
